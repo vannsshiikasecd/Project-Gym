@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 20px 40px;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            color: #ffd700;
+            border-radius: 5px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        .header {
+            position: relative;
+            height: 80vh;
+            background-image: url('https://i.pinimg.com/736x/71/60/c9/7160c9f131fe0685678a5749e264e054.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color:black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            border-bottom: 8px solid #333;
+        }
+        .header h1 {
+            font-size: 64px;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .header p {
+            font-size: 24px;
+            margin: 20px 0;
+            line-height: 1.4;
+            max-width: 700px;
+        }
+        .header button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .header button a{
+             text-decoration: none;
+             color: white;
+
+        }
+        .header button:hover {
+            background-color: #e64a19;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .collage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #ff5722;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .collage img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        .content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 800px;
+            text-align: center;
+            margin-top: -60px;
+            z-index: 1;
+        }
+        .content h2 {
+            font-size: 36px;
+            color: #ff5722;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+            margin: 0;
+        }
+        .content ul li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .content ul li::before {
+            content: '\2022';
+            color: #ff5722;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar"> 
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/468/147/original/vector-fitness-club-logo.jpg" alt="Gym Logo"> 
+            Fitness Club
+        </div>
+        <div>
+            <a href="/aboutus.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/login.html">Sign-Up</a>
+            <a href="/program.html">Programs</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Achieve Your Best Self</h1>
+        <p>Join our state-of-the-art gym and transform your fitness journey. Experience top-notch facilities and a supportive community.</p>
+        <button><a href="/login.html">Get Started</a></button>
+    </div>
+    <div class="main-content">
+        <div class="collage">
+            <img src="https://s1.1zoom.me/b5050/856/Fitness_Dumbbells_482980_3840x2400.jpg" alt="Gym Photo 1">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.1vfNPAEMpWezOXVaaXlAMgHaE8&pid=Api&P=0&h=180" alt="Gym Photo 2">
+            <img src="https://images.creativemarket.com/0.1.0/ps/5850983/1820/1213/m1/fpnw/wm1/iblcsxcrrsyk5q1od294ouwgrtupdxmi11fsjeoermvh8tn6vzfupmaz25w68mzr-.jpg?1549634378&s=ef5caa2ee9c3bd2ec510dadf76727247" alt="Gym Photo 3">
+            <img src="https://www.christiesrealestate.com/blog/wp-content/uploads/2021/01/header-1.jpg" alt="Gym Photo 4">
+            
+            <img src="https://marathonhandbook.com/wp-content/uploads/2022/08/Total-Body-Gym-Workout.jpg" alt="Gym Photo 5">
+            <img src="https://cdn.shopify.com/s/files/1/0004/4630/0222/files/Best_Gyms_in_London_Gyms_Third_Space_Read_more_in_The_Luxurist_at_LuxDeco.com.jpg?v=1597785959" alt="Gym Photo 6">
+            <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?cs=srgb&dl=barbell-building-challenge-1552252.jpg&fm=jpg" alt="Gym Photo 7">
+            <img src="http://prod.static9.net.au/_/media/2018/03/09/15/03/190309_coach_gym_women.jpg" alt="Gym Photo 8">
+        </div>
+        <div class="content">
+            <h2>Why Choose Us?</h2>
+            <p>Our gym is designed to provide the best fitness experience with modern amenities and expert trainers. We offer a range of services to meet all your fitness needs.</p>
+            <ul>
+                <li>Top-of-the-line Equipment</li>
+                <li>Expert Trainers</li>
+                <li>Diverse Classes</li>
+                <li>Flexible Membership Plans</li>
+                <li>Community Events</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Gym Name. All rights reserved.
+    </div>
+</body>
+</html>
