@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gym Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 20px 40px;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            color: #ffd700;
+            border-radius: 5px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        .header {
+            background-image: url('https://png.pngtree.com/background/20230528/original/pngtree-black-gym-with-heavy-weights-picture-image_2773823.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 8px solid #333;
+        }
+        .header h1 {
+            font-size: 56px;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .header p {
+            font-size: 24px;
+            margin: 20px 0;
+            line-height: 1.4;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            font-size: 36px;
+            color: #333;
+            margin-top: 0;
+            text-align: center;
+            font-weight: 700;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .team-member {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .team-member img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .team-member h3 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .team-member p {
+            font-size: 16px;
+            color: #666;
+            margin: 0 20px 20px;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta button a{
+            text-decoration: none;
+            color: white;
+        }
+        .cta button:hover {
+            background-color: #e64a19;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/468/147/original/vector-fitness-club-logo.jpg" alt="Gym Logo"> <!-- Replace with actual gym logo -->
+            Fitness Club
+        </div>
+        <div>
+            <a href="/iindex.html">Home</a>
+            >
+            <a href="/program.html">Program</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/login.html">Sign In</a>
+
+        </div>
+    </div>
+    <div class="header">
+        <h1>About Us</h1>
+        <p>Discover who we are and what drives us to help you achieve your fitness goals.</p>
+    </div>
+    <div class="content">
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide a top-notch fitness experience that empowers you to reach your goals. We are dedicated to offering the best facilities, expert trainers, and a supportive community that inspires you to push your limits.</p>
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://i.pinimg.com/originals/df/d3/f6/dfd3f6db0ead07ec259b573261e673b7.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Head Trainer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://www.muvfitness.com/lexington/wp-content/uploads/sites/7/2022/06/nutritional-guidance-gym-near-me-in-lexington.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Nutrition Expert</p>
+            </div>
+            <div class="team-member">
+                <img src="http://prod.static9.net.au/_/media/Network/Images/2017/02/07/14/41/170207coachPT.jpg" alt="Team Member 3">
+                <h3>Michael Brown</h3>
+                <p>Personal Coach</p>
+            </div>
+        </div>
+        <div class="cta">
+            <button><a href="/login.html">Join us today</a></button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Gym Name. All rights reserved.
+    </div>
+</body>
+</html>
