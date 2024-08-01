@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:black;
+            padding: 10px 20px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: black;
+            border-radius: 5px;
+            color: #ff9800;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .membership-header {
+            background: linear-gradient(135deg, #ff5722, #ff9800);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .membership-header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+        .membership-header p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .membership-plans {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .plan {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 280px;
+            transition: transform 0.3s;
+        }
+        .plan:hover {
+            transform: scale(1.05);
+        }
+        .plan h2 {
+            margin: 0;
+            color: #ff5722;
+            font-size: 32px;
+        }
+        .plan p {
+            font-size: 18px;
+            color: #666;
+        }
+        .plan .price {
+            font-size: 28px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .plan ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .plan ul li:last-child {
+            border-bottom: none;
+        }
+        .plan button {
+            background-color: #ff5722;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            
+        }
+        .plan button a{
+            text-decoration: none;
+            color: white;
+        }
+        .plan button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/468/147/original/vector-fitness-club-logo.jpg" alt="Gym Logo"> 
+            Fitness Club
+        </div>
+        <div>
+            <a href="/iindex.html">Home</a>
+            <a href="/aboutus.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/program.html">Program</a>
+            <a href="/login.html">Sign In</a>
+            
+        </div>
+    </div>
+    <div class="membership-header">
+        <h1>Our Membership Plans</h1>
+        <p>Choose the perfect plan for your fitness journey</p>
+    </div>
+    <div class="membership-plans">
+        <div class="plan">
+            <h2>Basic</h2>
+            <p class="price">$29/month</p>
+            <ul>
+                <li>Access to gym facilities</li>
+                <li>Basic fitness classes</li>
+                <li>Free orientation session</li>
+            </ul>
+            <button><a href="/payment.html">Proceed to Pay</a></button>
+        </div>
+        <div class="plan">
+            <h2>Standard</h2>
+            <p class="price">$49/month</p>
+            <ul>
+                <li>All Basic plan benefits</li>
+                <li>Group fitness classes</li>
+                <li>1 personal training session</li>
+            </ul>
+            <button><a href="/payment.html">Proceed to Pay</a></button>
+        </div>
+        <div class="plan">
+            <h2>Premium</h2>
+            <p class="price">$69/month</p>
+            <ul>
+                <li>All Standard plan benefits</li>
+                <li>Unlimited personal training</li>
+                <li>Access to special workshops</li>
+                <li>Free guest passes</li>
+            </ul>
+            <button><a href="/payment.html">Proceed to Pay</a></button>
+        </div>
+    </div>
+</body>
+</html>
